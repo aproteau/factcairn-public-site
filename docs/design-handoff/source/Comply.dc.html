@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>factcairnComply — continuous compliance</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F3F7F6;color:#0E1B2C;font-family:Inter,system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-0.02em;margin:0}
+p{margin:0}
+a{color:#0F766E}a:hover{color:#115E59}
+</style>
+</helmet>
+<div style="width: 100%;">
+
+<!-- NAV + HERO dark -->
+<div style="background: #0B2E2B; color: #F3F7F6;">
+<header style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+<a href="Comply.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F3F7F6;">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#14B8A6"></rect><ellipse cx="16" cy="23.2" rx="8.6" ry="3.2" fill="#0B2E2B"></ellipse><ellipse cx="15.2" cy="17" rx="6" ry="2.7" fill="#0B2E2B"></ellipse><ellipse cx="16.4" cy="11.4" rx="3.8" ry="2.4" fill="#FFFFFF"></ellipse></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 21px; letter-spacing: -0.03em; white-space: nowrap;"><span style="font-weight: 400; color: #9FC3BD;">factcairn</span><span style="font-weight: 700; color: #5EEAD4;">Comply</span></span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px;">
+<a href="#frameworks" style="color: #BFD6D2; text-decoration: none;">Frameworks</a>
+<a href="#how" style="color: #BFD6D2; text-decoration: none;">How it works</a>
+<a href="#trustcenter" style="color: #BFD6D2; text-decoration: none;">Trust center</a>
+<a href="#pricing" style="color: #BFD6D2; text-decoration: none;">Pricing</a>
+<a href="Main.dc.html" style="color: #BFD6D2; text-decoration: none;">Platform</a>
+</nav>
+<div style="display: flex; gap: 12px; align-items: center;">
+<a href="#" style="color: #F3F7F6; text-decoration: none; font-size: 15px; padding: 12px 14px;">Sign in</a>
+<a href="#cta" style="background: #5EEAD4; color: #0B2E2B; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 18px; border-radius: 10px;">Book a demo</a>
+</div>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 26px;">
+<h1 style="font-size: 62px; line-height: 1.03; font-weight: 700;">Compliance that<br><span style="color: #5EEAD4;">stays proven.</span></h1>
+<p style="font-size: 19px; line-height: 1.55; color: #BFD6D2; max-width: 520px;">Factcairn Comply tests your controls against live systems, collects the evidence for you, and hands auditors a clean workspace. The same evidence answers customer questionnaires and buyer diligence.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a href="#cta" style="background: #F3F7F6; color: #0B2E2B; text-decoration: none; font-weight: 600; padding: 15px 22px; border-radius: 10px;">Start with SOC 2</a>
+<a href="#how" style="border: 1px solid #2F5B56; color: #F3F7F6; text-decoration: none; font-weight: 500; padding: 15px 22px; border-radius: 10px;">How it works →</a>
+</div>
+<div id="frameworks" style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="border: 1px solid #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px;">SOC 2 Type 1 &amp; 2</span>
+<span style="border: 1px solid #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px;">ISO 27001</span>
+<span style="border: 1px solid #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px;">Québec Law 25</span>
+<span style="border: 1px solid #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px;">PIPEDA</span>
+<span style="border: 1px solid #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px;">HIPAA</span>
+<span style="border: 1px dashed #2F5B56; border-radius: 999px; padding: 7px 14px; font-size: 14px; color: #BFD6D2;">+ custom</span>
+</div>
+</div>
+
+<!-- Controls mock -->
+<div style="flex: 1 1 560px; min-width: 0; background: #FFFFFF; color: #0E1B2C; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.25);">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; padding: 18px 22px; border-bottom: 1px solid #E3ECEA;">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px;">SOC 2 · Security</span>
+<span style="font-size: 13px; color: #3F5C58;">Audit window opens in 34 days</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding: 18px 22px; border-bottom: 1px solid #E3ECEA;">
+<div style="flex: 1 1 120px; background: #ECF8F5; border-radius: 10px; padding: 12px 14px;"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; color: #0F766E;">71</div><div style="font-size: 13px; color: #3F5C58;">Passing</div></div>
+<div style="flex: 1 1 120px; background: #FFF7E6; border-radius: 10px; padding: 12px 14px;"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; color: #8A5A0B;">6</div><div style="font-size: 13px; color: #3F5C58;">Needs attention</div></div>
+<div style="flex: 1 1 120px; background: #FFF1EC; border-radius: 10px; padding: 12px 14px;"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; color: #B4380A;">2</div><div style="font-size: 13px; color: #3F5C58;">Failing</div></div>
+</div>
+<div style="display: flex; flex-direction: column;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 22px; border-bottom: 1px solid #EEF3F2;"><span style="flex: 0 0 60px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3F5C58;">CC6.1</span><span style="flex: 1 1 220px; font-size: 14px;">MFA enforced for all workforce accounts<div style="font-size: 12px; color: #3F5C58;">Entra ID · checked 2 h ago</div></span><span style="font-size: 12px; font-weight: 700; color: #0F766E; background: #ECF8F5; padding: 4px 8px; border-radius: 5px;">PASSING</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 22px; border-bottom: 1px solid #EEF3F2;"><span style="flex: 0 0 60px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3F5C58;">CC8.1</span><span style="flex: 1 1 220px; font-size: 14px;">Production changes reviewed before merge<div style="font-size: 12px; color: #3F5C58;">GitHub branch protection · 4 repos</div></span><span style="font-size: 12px; font-weight: 700; color: #0F766E; background: #ECF8F5; padding: 4px 8px; border-radius: 5px;">PASSING</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 22px; border-bottom: 1px solid #EEF3F2;"><span style="flex: 0 0 60px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3F5C58;">CC1.4</span><span style="flex: 1 1 220px; font-size: 14px;">Annual security training completed<div style="font-size: 12px; color: #3F5C58;">3 employees overdue · reminders sent</div></span><span style="font-size: 12px; font-weight: 700; color: #8A5A0B; background: #FFF7E6; padding: 4px 8px; border-radius: 5px;">ATTENTION</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 22px;"><span style="flex: 0 0 60px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3F5C58;">A1.2</span><span style="flex: 1 1 220px; font-size: 14px;">Backup restore tested this quarter<div style="font-size: 12px; color: #3F5C58;">Last test 104 days ago · Azure SQL</div></span><span style="font-size: 12px; font-weight: 700; color: #B4380A; background: #FFF1EC; padding: 4px 8px; border-radius: 5px;">FAILING</span></div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px;">
+<div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #0F766E; font-weight: 600; margin-bottom: 14px;">How it works</div>
+<h2 style="font-size: 40px; line-height: 1.1; font-weight: 700; max-width: 700px; margin-bottom: 44px;">Connect. Monitor. Prove. On repeat.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="width: 44px; height: 44px; border-radius: 12px; background: #ECF8F5; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #0F766E; font-size: 18px;">1</div>
+<h3 style="font-size: 21px; font-weight: 600;">Connect your stack</h3>
+<p style="font-size: 15px; line-height: 1.6; color: #4A5565;">Cloud, identity, code, HR and device management. Each source gets a trust tier and an owner.</p>
+</div>
+<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="width: 44px; height: 44px; border-radius: 12px; background: #ECF8F5; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #0F766E; font-size: 18px;">2</div>
+<h3 style="font-size: 21px; font-weight: 600;">Monitor continuously</h3>
+<p style="font-size: 15px; line-height: 1.6; color: #4A5565;">Automated tests run every few hours. Drift opens a task for the right owner before an auditor finds it.</p>
+</div>
+<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="width: 44px; height: 44px; border-radius: 12px; background: #ECF8F5; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #0F766E; font-size: 18px;">3</div>
+<h3 style="font-size: 21px; font-weight: 600;">Prove it, once</h3>
+<p style="font-size: 15px; line-height: 1.6; color: #4A5565;">Evidence is captured with timestamps and sources. Auditors get a read‑only workspace; customers get your trust center.</p>
+</div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section style="background: #E6F0EE; padding: 96px 0;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px;">
+<h2 style="font-size: 38px; line-height: 1.1; font-weight: 700; max-width: 700px; margin-bottom: 40px;">Everything an audit needs, nothing it doesn't.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 40px;">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">Policy templates, written for you</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">Drafted from your actual systems, not generic boilerplate. Employees acknowledge in one click.</p></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">Vendor risk reviews</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">Inventory every vendor, collect their reports, and track contract and data‑processing terms.</p></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">People controls</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">Onboarding and offboarding checks, background checks, training and access reviews — tied to your HRIS.</p></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">Auditor workspace</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">Sample requests, evidence and comments in one place. No more shared folders full of screenshots.</p></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">Map once, cover many</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">One control satisfies overlapping requirements across SOC 2, ISO 27001 and privacy laws.</p></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px;"><h3 style="font-size: 19px; font-weight: 600;">Built for Canadian companies</h3><p style="font-size: 15px; line-height: 1.6; color: #3F4B4A;">Law 25 privacy impact assessments, bilingual policies, and data hosted in Canada.</p></div>
+</div>
+</div>
+</section>
+
+<!-- TRUST CENTER -->
+<section id="trustcenter" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+<div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #0F766E; font-weight: 600;">Trust center</div>
+<h2 style="font-size: 38px; line-height: 1.1; font-weight: 700;">Let customers check for themselves.</h2>
+<p style="font-size: 17px; line-height: 1.6; color: #3D4757;">Publish a live security page backed by your passing controls. Share reports under NDA with one click — and stop answering the same questionnaire every week.</p>
+<div style="background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #3F5C58; font-weight: 600;">Your evidence works twice</div>
+<p style="font-size: 15px; line-height: 1.6; color: #3D4757;">Every passing control is a verified fact on the Factcairn platform. <a href="Respond.dc.html">Respond</a> uses it to answer security questionnaires; <a href="Deal.dc.html">Deal</a> uses it in tech diligence.</p>
+</div>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 20px; overflow: hidden;">
+<div style="background: #0B2E2B; color: #F3F7F6; padding: 22px 26px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;">
+<div><div style="font-size: 13px; color: #BFD6D2;">trust.northwindfreight.example</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600;">Northwind Freight · Trust center</div></div>
+<a href="#" style="background: #5EEAD4; color: #0B2E2B; text-decoration: none; font-weight: 600; font-size: 14px; padding: 10px 14px; border-radius: 8px;">Request SOC 2 report</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px 26px; border-bottom: 1px solid #EEF3F2;">
+<span style="background: #ECF8F5; color: #0F766E; font-weight: 600; font-size: 13px; padding: 7px 12px; border-radius: 6px;">SOC 2 Type 2</span>
+<span style="background: #ECF8F5; color: #0F766E; font-weight: 600; font-size: 13px; padding: 7px 12px; border-radius: 6px;">Law 25 compliant</span>
+<span style="background: #F1F4F9; color: #3D4757; font-weight: 600; font-size: 13px; padding: 7px 12px; border-radius: 6px;">ISO 27001 · in progress</span>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<div style="flex: 1 1 200px; padding: 18px 26px; border-right: 1px solid #EEF3F2; border-bottom: 1px solid #EEF3F2;"><div style="font-weight: 600; font-size: 15px;">Data encryption</div><div style="font-size: 13px; color: #0F766E;">● Monitored · 3 controls</div></div>
+<div style="flex: 1 1 200px; padding: 18px 26px; border-bottom: 1px solid #EEF3F2;"><div style="font-weight: 600; font-size: 15px;">Access control</div><div style="font-size: 13px; color: #0F766E;">● Monitored · 7 controls</div></div>
+<div style="flex: 1 1 200px; padding: 18px 26px; border-right: 1px solid #EEF3F2;"><div style="font-weight: 600; font-size: 15px;">Incident response</div><div style="font-size: 13px; color: #0F766E;">● Monitored · 4 controls</div></div>
+<div style="flex: 1 1 200px; padding: 18px 26px;"><div style="font-weight: 600; font-size: 15px;">Subprocessors</div><div style="font-size: 13px; color: #3F5C58;">12 listed · updated monthly</div></div>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="max-width: 1200px; margin: 0 auto; padding: 0 32px 96px;">
+<h2 style="font-size: 38px; line-height: 1.1; font-weight: 700; margin-bottom: 36px;">Simple annual plans.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px;"><h3 style="font-size: 22px; font-weight: 600;">Essentials</h3><div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700;">[PRICE]<span style="font-size: 16px; font-weight: 500; color: #4A5565;"> / year</span></div><p style="font-size: 15px; line-height: 1.6; color: #4A5565;">One framework, core connectors, policy templates.</p></div>
+<div style="flex: 1 1 300px; background: #0B2E2B; color: #F3F7F6; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px;"><h3 style="font-size: 22px; font-weight: 600;">Growth</h3><div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700;">[PRICE]<span style="font-size: 16px; font-weight: 500; color: #BFD6D2;"> / year</span></div><p style="font-size: 15px; line-height: 1.6; color: #BFD6D2;">Multiple frameworks, trust center, vendor risk, auditor workspace.</p></div>
+<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE7E5; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px;"><h3 style="font-size: 22px; font-weight: 600;">Platform bundle</h3><div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700;">[PRICE]<span style="font-size: 16px; font-weight: 500; color: #4A5565;"> / year</span></div><p style="font-size: 15px; line-height: 1.6; color: #4A5565;">Comply + Respond on one evidence base. Deal readiness included.</p></div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="cta" style="max-width: 1200px; margin: 0 auto; padding: 0 32px 96px;">
+<div style="background: #0F766E; color: #FFFFFF; border-radius: 24px; padding: 56px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between;">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 12px;">
+<h2 style="font-size: 40px; line-height: 1.1; font-weight: 700;">Audit‑ready without the scramble.</h2>
+<p style="font-size: 17px; line-height: 1.6; color: #D3F2EC;">See your SOC 2 gap report after connecting your first systems.</p>
+</div>
+<form style="flex: 1 1 380px; display: flex; flex-wrap: wrap; gap: 10px;" aria-label="Book a demo">
+<label for="comply-email" style="position: absolute; left: -9999px;">Work email</label>
+<input id="comply-email" type="email" placeholder="you@company.com" style="flex: 1 1 220px; height: 52px; border-radius: 10px; border: none; padding: 0 16px; font-size: 16px; font-family: Inter, sans-serif;">
+<button type="button" style="height: 52px; border-radius: 10px; border: none; background: #0B2E2B; color: #FFFFFF; font-weight: 600; font-size: 16px; padding: 0 22px; font-family: Inter, sans-serif; cursor: pointer;">Book a demo</button>
+</form>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #DCE7E5; background: #FFFFFF;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 36px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; color: #4A5565;">
+<div>factcairnComply is part of the <a href="Main.dc.html">Factcairn platform</a>.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px;"><a href="Deal.dc.html" style="color: #4A5565;">Deal</a><a href="Respond.dc.html" style="color: #4A5565;">Respond</a><a href="#" style="color: #4A5565;">Security</a><a href="#" style="color: #4A5565;">Privacy</a></div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3700}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
