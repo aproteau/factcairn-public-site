@@ -1,0 +1,5 @@
+/* Base styles shared by every factcairn site. Page-specific colors stay in each page's <style>;
+   section styles are inline in the HTML (see docs/design-handoff/HANDOFF.md). */
+body{margin:0;font-family:Inter,system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-0.02em;margin:0}
+p{margin:0}

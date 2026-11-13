@@ -1,0 +1,63 @@
+name: Deploy comply.factcairn.com
+
+# main -> production. staging -> the "staging" environment.
+# Pull requests into main or staging -> a temporary preview URL posted on the PR.
+# Production is kept out of search engines until the repository variable INDEX_PRODUCTION is "true".
+on:
+  push:
+    branches: [main, staging]
+    paths: ['sites/comply/**', 'shared/**', '.github/workflows/deploy-comply.yml']
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: [main, staging]
+    paths: ['sites/comply/**', 'shared/**', '.github/workflows/deploy-comply.yml']
+  workflow_dispatch:
+
+env:
+  SITE: sites/comply
+
+jobs:
+  deploy:
+    if: github.event_name != 'pull_request' || github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write   # lets the deploy action post the preview URL on the PR
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Copy shared brand files into the site
+        run: rm -rf "$SITE/shared" && cp -r shared "$SITE/shared"
+
+      - name: Version shared files (cache busting)
+        run: |
+          V=$(find shared -type f -print0 | sort -z | xargs -0 cat | sha256sum | cut -c1-10)
+          find "$SITE" -name '*.html' -exec sed -i "s/?v=DEV/?v=$V/g" {} +
+
+      - name: Keep staging, previews and (until launch) production out of search engines
+        if: github.ref != 'refs/heads/main' || vars.INDEX_PRODUCTION != 'true'
+        run: |
+          jq '.globalHeaders["X-Robots-Tag"] = "noindex, nofollow"' "$SITE/staticwebapp.config.json" > cfg.json
+          mv cfg.json "$SITE/staticwebapp.config.json"
+          printf 'User-agent: *\nDisallow: /\n' > "$SITE/robots.txt"
+
+      - name: Deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN_COMPLY }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: sites/comply
+          api_location: ''
+          output_location: ''
+          skip_app_build: true
+          production_branch: main   # any other branch deploys to an environment named after it
+
+  close_preview:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN_COMPLY }}
+          action: close
